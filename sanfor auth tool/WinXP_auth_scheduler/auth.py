@@ -41,8 +41,7 @@ def login(name):
     password_mgr = urllib2.HTTPPasswordMgrWithDefaultRealm()
     # Add the username and password.
     # If we knew the realm, we could use it instead of ``None``.
-    #password_mgr.add_password(None, login_url, '贾童飞', '2011')
-    password_mgr.add_password('WebAuthorizeCenter', login_url, name, '2011')
+    password_mgr.add_password('WebAuthorizeCenter', login_url, name, 'yourpassword')
 
     handler = urllib2.HTTPBasicAuthHandler(password_mgr)
 
@@ -102,7 +101,7 @@ def do_action(func, param=''):
 
 if __name__ == '__main__':
 
-    namelist = ['廖江']
+    namelist = ['yourusername']
 #    with open('namelist2.txt', 'r') as f:
 #        for line in f:
 #            namelist.append(line[:-1])
