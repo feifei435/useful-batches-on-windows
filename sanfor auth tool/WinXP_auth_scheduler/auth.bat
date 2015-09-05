@@ -1,6 +1,6 @@
 ::创建定时任务的命令
 ::schtasks /create /sc minute /mo 2 /tn "auth" /tr c:\auth.bat
-::@echo off
+@echo off
 cd c:\
 ::这句话用于定时任务里
 SET T=%date:~2,8% %time:~0,2%:%time:~3,2%:%time:~6,2%
