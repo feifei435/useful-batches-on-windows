@@ -5,3 +5,5 @@ Some bat script files on windows to automate daily work flow.
 具体功能可看脚本内的注释
 ##wifishare.bat
 此工具是利用windows内自建的Virtual Wifi Adapter，将电脑作为WIFI热点，热点的名字和密码可修改bat中相关字段
+##sanfor auth tool
+sanfor(深信服) ac 自动登录认证工具(很多同学公司内部的网关是这个吧)，学习python的HTTPBasicAuth用法时写的
