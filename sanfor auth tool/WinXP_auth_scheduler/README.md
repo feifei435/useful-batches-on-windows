@@ -10,14 +10,14 @@
 
 ##使用
 认证的用户名需要在104行给出
-```
+```python
 namelist = ['yourusername']
 ```
 认证的密码需要在44行给出
 ```
 password_mgr.add_password('WebAuthorizeCenter', login_url, name, 'yourpassword')
 ```
-使用reg_scheduler注册bat为定时器任务，默认每2min定时执行
+使用reg_scheduler注册bat为定时器任务，默认每2min定时执行。注意修改相应的路径。
 
 
 ##notes
