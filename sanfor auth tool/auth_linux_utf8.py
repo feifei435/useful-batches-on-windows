@@ -41,8 +41,7 @@ def login(name):
     password_mgr = urllib2.HTTPPasswordMgrWithDefaultRealm()
     # Add the username and password.
     # If we knew the realm, we could use it instead of ``None``.
-    #password_mgr.add_password(None, login_url, 'myname', '2011')
-    password_mgr.add_password('WebAuthorizeCenter', login_url, name, '2011')
+    password_mgr.add_password('WebAuthorizeCenter', login_url, name, 'yourpassword')
 
     handler = urllib2.HTTPBasicAuthHandler(password_mgr)
 
@@ -79,8 +78,13 @@ def do_action(func, param=''):
     except HTTPError, e:
         print 'The server couldn\'t fulfill the request.'
         print 'Error code:', e.code
-        print 'Reason:', e.reason
-        print 'Info:', e.info()
+        if e.code == 401:
+            print 'maybe wrong password?'
+        elif e.code == 302:
+            print 'auth success!'
+        else:
+            print 'Reason:', e.reason
+            print 'Info:', e.info()
         return e.code
         #print 'Read:', e.read()
     except URLError, e:
@@ -90,19 +94,19 @@ def do_action(func, param=''):
     else:
         print '*' * 13 + 'action ok.'.decode("UTF-8") + '*' * 13
         print '*' * 13 + 'HTTP Info:' + '*' * 13 + '\r\n', response.info()
-        print 'URL:', response.geturl()
-        print 'CODE:', response.getcode()
+        #print 'URL:', response.geturl()
+        #print 'CODE:', response.getcode()
         ret_html = response.read()
         #ret_html_decode = ret_html.decode("UTF-8", 'ignore')
         #ret_html_decode = ret_html.decode("UTF-8", 'ignore').encode("GB18030")
         #print ret_html_decode
 
         print '*' * 13 + ' content: ' + '*' * 13
-        return ret_html
+	return ret_html
 
 if __name__ == '__main__':
 
-    namelist = ['廖江']
+    namelist = ['yourusername']
 #    with open('namelist2.txt', 'r') as f:
 #        for line in f:
 #            namelist.append(line[:-1])
