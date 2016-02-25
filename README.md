@@ -7,3 +7,7 @@
 此工具是利用windows内自建的Virtual Wifi Adapter，将电脑作为WIFI热点，热点的名字和密码可修改bat中相关字段
 ##sanfor auth tool
 sanfor(深信服) ac 自动登录认证工具(很多同学公司内部的网关是这个吧)，学习python的HTTPBasicAuth用法时写的
+##lr_install.sh
+loadrunner11 loadgenerator Linux版自动安装脚本
+##change_yum_centos5/6.sh
+将rhel5/6的默认yum源改为centos源，并添加epel源

@@ -112,7 +112,7 @@ if __name__ == '__main__':
 #            namelist.append(line[:-1])
 
     for name in namelist:
-        print 'trying name:' + name.decode("UTF-8", 'ignore')
+        #print 'trying name:' + name.decode("UTF-8", 'ignore')
         #print 'trying name' + name.decode("UTF-8", 'ignore').encode("GB18030") + '...'
 
         print do_action(logout)
