@@ -1,5 +1,5 @@
-# useful batches on windows
-Some bat script files on windows to automate daily work flow.
+# useful-shell-scripts-and-batches
+日常开发工作中用到的一些Linux/Windows上的自动化脚本。
 ##swip3.bat
 此工具的主要作用是在公司内网环境中的 有线/无线 接入方式切换时自动做 相关配置的路由表的调整
 具体功能可看脚本内的注释
