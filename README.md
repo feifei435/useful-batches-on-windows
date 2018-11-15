@@ -11,3 +11,28 @@ sanfor(深信服) ac 自动登录认证工具(很多同学公司内部的网关�
 loadrunner11 loadgenerator Linux版自动安装脚本
 ##change_yum_centos5/6.sh
 将rhel5/6的默认yum源改为centos源，并添加epel源
+
+## .tmux.conf
+tmux配置文件，将此文件放置于~/下
+
+关于配置文件中用到的tmux插件：
+
+会话保存：https://linuxtoy.org/archives/tmux-resurrect-and-continuum.html
+
+tmux和鼠标：http://www.tuicool.com/articles/fqIZZn
+
+tmux中默认bindkey是C-T，此配置文件中使用C-S
+
+tmux相关教程：
+
+http://blog.jobbole.com/87584/
+
+http://blog.csdn.net/hcx25909/article/details/7602935
+
+http://www.wutianqi.com/?p=3681
+
+http://os.51cto.com/art/201410/453671.htm
+
+http://tangosource.com/blog/a-tmux-crash-course-tips-and-tweaks/
+
+
